@@ -20,7 +20,7 @@ title: dillon o'connor
 <section class="mt-5">
   <p class="is-size-4 has-text-white">Featured Projects</p>
 
-  <article class="card has-background-black mt-3 has-text-white">
+  <article class="card mt-5 has-text-white">
     <div class="card-image is-flex-mobile is-justify-content-center is-hidden-tablet">
       <figure class="m-5 image is-256x256">
         <%= image_tag "music.svg" %>
@@ -35,20 +35,24 @@ title: dillon o'connor
         </div>
         <div class="media-content">
           <p class="title is-4 has-text-white">OST</p>
-          <div class="content">
+          <p>
             A user-driven database of original soundtracks (OSTs) from popular Asian dramas. 
             Built with Rails, Bulma, and the Spotify API (via RSpotify). Features:
+          </p>
             <ul>
               <li>Add and view Spotify playlists</li>
               <li>Like and follow playlists</li>
               <li>Listen on Spotify or YouTube</li>
             </ul>
-          </div>
+            <div class="is-flex is-justify-content-space-between is-align-items-center mt-5">
+              <p class="is-italic is-size-7">Please be patient as the Heroku dyno spins up--thank you!</p>
+              <%= link_to "Check It Out", "https://ancient-forest-35389.herokuapp.com/", class: "button is-dark" %>
+            </div>
         </div>
       </div>
     </div>
   </article>
-  <article class="card has-background-black mt-3 has-text-white">
+  <article class="card mt-5 has-text-white">
     <div class="card-image is-flex-mobile is-justify-content-center is-hidden-tablet">
       <figure class="m-5 image is-256x256">
         <%= image_tag "forest.svg" %>
@@ -63,16 +67,19 @@ title: dillon o'connor
         </div>
         <div class="media-content">
           <p class="title is-4 has-text-white">AQI</p>
-          <div class="content">
+          <p>
             An Air Quality Index (AQI) monitoring tool, powered by data from the World Air Quality Index project.
             Extends existing resources with additional data visualization. Built with Rails, PostgreSQL, Chartkick, 
             and Tailwind.
+          </p>
+          <div class="is-flex is-justify-content-space-between is-align-items-center mt-5">
+            <p class="is-italic is-size-7">Please be patient as the Heroku dyno spins up--thank you!</p>
+            <%= link_to "Check It Out", "https://fathomless-retreat-37870.herokuapp.com/", class: "button is-dark" %>
           </div>
-        </div>
       </div>
     </div>
   </article>
-  <article class="card has-background-black mt-3 has-text-white">
+  <article class="card mt-5 has-text-white">
     <div class="card-image is-flex-mobile is-justify-content-center is-hidden-tablet">
       <figure class="m-5 image is-256x256">
         <%= image_tag "dictionary.svg" %>
@@ -87,9 +94,13 @@ title: dillon o'connor
         </div>
         <div class="media-content">
           <p class="title is-4 has-text-white">OST</p>
-          <div class="content">
+          <p>
             A simple Chinese-English dictionary based on CC-CEDICT. Currently built with Rails, PostgreSQL, 
             Textacular, Bulma, and Regex magic. Upgrades planned to finetune search accuracy.
+          </p>
+          <div class="is-flex is-justify-content-space-between is-align-items-center mt-5">
+            <p class="is-italic is-size-7">Please be patient as the Heroku dyno spins up--thank you!</p>
+            <%= link_to "Check It Out", "https://morning-oasis-87823.herokuapp.com/", class: "button is-dark" %>
           </div>
         </div>
       </div>
