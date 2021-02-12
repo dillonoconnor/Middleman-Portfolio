@@ -17,42 +17,67 @@ title: dillon o'connor
   </div>
 </section>
 
-<p class="is-size-4 has-text-white">Featured Projects</p>
+<section class="mt-5">
+  <p class="is-size-4 has-text-white">Featured Projects</p>
 
-<section class="mt-5 columns is-justify-content-space-between">
-
-  <div class="column">
-    <article class="message mt-3">
-      <div class="message-header">
-        <p>OST</p>
+  <article class="card has-background-black mt-3 has-text-white">
+    <div class="card-content">
+      <div class="media is-align-items-center">
+        <div class="media-left">
+          <figure class="image">
+            <%= image_tag "music.svg" %>
+          </figure>
+        </div>
+        <div class="media-content">
+          <p class="title is-4 has-text-white">OST</p>
+          <div class="content">
+            A user-driven database of original soundtracks (OSTs) from popular Asian dramas. 
+            Built with Rails, Bulma, and the Spotify API (via RSpotify). Features:
+            <ul>
+              <li>Add and view Spotify playlists</li>
+              <li>Like and follow playlists</li>
+              <li>Listen on Spotify or YouTube</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="message-body">
-        A user-driven database of original soundtracks (OSTs) from popular Asian dramas. 
-        Built with Rails, Bulma, and the Spotify API (via RSpotify).
+    </div>
+  </article>
+  <article class="card has-background-black mt-3 has-text-white">
+      <div class="card-content">
+        <div class="media is-align-items-center">
+          <div class="media-left">
+            <figure class="image">
+              <%= image_tag "forest.svg" %>
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-4 has-text-white">AQI</p>
+            <div class="content">
+              An Air Quality Index (AQI) monitoring tool, powered by data from the World Air Quality Index project.
+              Extends existing resources with additional data visualization. Built with Rails, PostgreSQL, Chartkick, 
+              and Tailwind.
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
-  </div>
-  <div class="column">
-    <article class="message mt-3">
-      <div class="message-header">
-        <p>AQI</p>
+  </article>
+  <article class="card has-background-black mt-3 has-text-white">
+    <div class="card-content">
+      <div class="media is-align-items-center">
+        <div class="media-left">
+          <figure class="image">
+            <%= image_tag "dictionary.svg" %>
+          </figure>
+        </div>
+        <div class="media-content">
+          <p class="title is-4 has-text-white">OST</p>
+          <div class="content">
+            A simple Chinese-English dictionary based on CC-CEDICT. Currently built with Rails, PostgreSQL, 
+            Textacular, Bulma, and Regex magic. Upgrades planned to finetune search accuracy.
+          </div>
+        </div>
       </div>
-      <div class="message-body">
-        An Air Quality Index (AQI) monitoring tool, powered by data from the World Air Quality Index project.
-        Extends existing resources with additional data visualization. Built with Rails, PostgreSQL, Chartkick, 
-        and Tailwind.
-      </div>
-    </article>
-  </div>
-  <div class="column">
-    <article class="message mt-3">
-      <div class="message-header">
-        <p>CD</p>
-      </div>
-      <div class="message-body">
-        A simple Chinese-English dictionary based on CC-CEDICT. Currently built with Rails, PostgreSQL, 
-        Textacular, Bulma, and Regex magic. Upgrades planned to finetune search accuracy.
-      </div>
-    </article>
-  </div>
+    </div>
+  </article>
 <section>
