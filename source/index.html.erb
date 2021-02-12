@@ -21,9 +21,14 @@ title: dillon o'connor
   <p class="is-size-4 has-text-white">Featured Projects</p>
 
   <article class="card has-background-black mt-3 has-text-white">
+    <div class="card-image is-flex-mobile is-justify-content-center is-hidden-tablet">
+      <figure class="m-5 image is-256x256">
+        <%= image_tag "music.svg" %>
+      </figure>
+    </div>
     <div class="card-content">
       <div class="media is-align-items-center">
-        <div class="media-left">
+        <div class="media-left is-hidden-mobile">
           <figure class="image">
             <%= image_tag "music.svg" %>
           </figure>
@@ -44,28 +49,38 @@ title: dillon o'connor
     </div>
   </article>
   <article class="card has-background-black mt-3 has-text-white">
-      <div class="card-content">
-        <div class="media is-align-items-center">
-          <div class="media-left">
-            <figure class="image">
-              <%= image_tag "forest.svg" %>
-            </figure>
-          </div>
-          <div class="media-content">
-            <p class="title is-4 has-text-white">AQI</p>
-            <div class="content">
-              An Air Quality Index (AQI) monitoring tool, powered by data from the World Air Quality Index project.
-              Extends existing resources with additional data visualization. Built with Rails, PostgreSQL, Chartkick, 
-              and Tailwind.
-            </div>
+    <div class="card-image is-flex-mobile is-justify-content-center is-hidden-tablet">
+      <figure class="m-5 image is-256x256">
+        <%= image_tag "forest.svg" %>
+      </figure>
+    </div>
+    <div class="card-content">
+      <div class="media is-align-items-center">
+        <div class="media-left is-hidden-mobile">
+          <figure class="image">
+            <%= image_tag "forest.svg" %>
+          </figure>
+        </div>
+        <div class="media-content">
+          <p class="title is-4 has-text-white">AQI</p>
+          <div class="content">
+            An Air Quality Index (AQI) monitoring tool, powered by data from the World Air Quality Index project.
+            Extends existing resources with additional data visualization. Built with Rails, PostgreSQL, Chartkick, 
+            and Tailwind.
           </div>
         </div>
       </div>
+    </div>
   </article>
   <article class="card has-background-black mt-3 has-text-white">
+    <div class="card-image is-flex-mobile is-justify-content-center is-hidden-tablet">
+      <figure class="m-5 image is-256x256">
+        <%= image_tag "dictionary.svg" %>
+      </figure>
+    </div>
     <div class="card-content">
       <div class="media is-align-items-center">
-        <div class="media-left">
+        <div class="media-left is-hidden-mobile">
           <figure class="image">
             <%= image_tag "dictionary.svg" %>
           </figure>
