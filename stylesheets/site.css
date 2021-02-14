@@ -9,8 +9,8 @@ p {
   color: #fff;
   margin-left: 1rem; }
 
-.drop-box-shadow {
-  box-shadow: none; }
+.container {
+  padding: 0 1rem; }
 
 .fira {
   font-family: "Fira Sans";
@@ -34,6 +34,10 @@ p {
 
 .hero-body {
   padding: 3rem 0; }
+
+.mobile-links {
+  background-color: transparent;
+  box-shadow: none; }
 
 .navbar {
   background-color: transparent; }
