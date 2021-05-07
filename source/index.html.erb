@@ -36,7 +36,7 @@ title: dillon o'connor
           <p class="title fira is-2">OST</p>
           <p>
             A user-driven database of original soundtracks (OSTs) from popular Asian dramas. 
-            Built with Rails, Bulma, and the Spotify API (via RSpotify). Features:
+            Built with Rails, Turbo, Bulma, and the Spotify API (via RSpotify). Features:
           </p>
             <div class="content">
               <ul>
@@ -109,27 +109,27 @@ title: dillon o'connor
   </article>
 <section>
 
-<section class="mt-5 columns">
-  <article class="mt-5 column is-two-thirds">
-    <p class="is-size-4 mb-5">Toolbox</p>
-    <%= partial '/layouts/tags', locals: {
+<section class="mt-6">
+    <p class="is-size-4">Toolbox</p>
+    <article class="box mt-5 p-5">
+      <%= partial '/layouts/tags', locals: {
                                             title: "Back End", 
                                             tags: ["Ruby on Rails", "Node.js"] } %>
 
-    <%= partial '/layouts/tags', locals: {
+      <%= partial '/layouts/tags', locals: {
                                             title: "Front End", 
                                             tags: ["React & Redux", "TailwindCSS", "Bulma", "Bootstrap", "Sass"] } %>
 
-    <%= partial '/layouts/tags', locals: {
+      <%= partial '/layouts/tags', locals: {
                                             title: "Databases", 
                                             tags:  ["PostgreSQL & ActiveRecord", "Redis", "MongoDB & Mongoose"] } %>    
 
-    <%= partial '/layouts/tags', locals: {
+      <%= partial '/layouts/tags', locals: {
                                             title: "Testing", 
                                             tags: ["RSpec", "minitest", "Capybara"] } %>
 
-    <%= partial '/layouts/tags', locals: {
+      <%= partial '/layouts/tags', locals: {
                                             title: "Other", 
                                             tags: ["Linux", "Git", "Heroku", "DigitalOcean"] } %>
-  </article>
+    </article>
 </section>
