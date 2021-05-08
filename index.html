@@ -12,10 +12,10 @@
     <script src="/javascripts/site.js"></script>
   </head>
   <body>
-    <main class="container fira">
-      <nav class="navbar is-transparent mt-3" role="navigation" aria-label="main navigation">
+    <main class="container inter">
+      <nav class="navbar is-transparent mt-5" role="navigation" aria-label="main navigation">
     <div class="navbar-brand ml-0">
-      <a href="https://dillonoconnor.dev/" class="navbar-item pl-0 is-size-4 has-text-weight-bold">dillon o'connor</a>
+      <a href="https://dillonoconnor.dev/" class="navbar-item pl-0 is-size-4 has-text-weight-bold has-text-white">dillon o'connor</a>
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarLinks">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -30,15 +30,16 @@
             <a href="mailto:oconnor.dillon8@gmail.com" class="mr-5" target="_blank">Email</a>
             <a href="https://github.com/dillonoconnor" class="mr-5">GitHub</a>
             <a href="https://www.linkedin.com/in/dillonoconnor/" class="mr-5">LinkedIn</a>
-            <a href="https://twitter.com/fs_dillon" class="">Twitter</a>
+            <a href="https://twitter.com/fs_dillon">Twitter</a>
           </div>
         </div>
       </div>
     </div>
-</nav> 
+</nav>
+
       <section class="hero is-bold mt-5">
   <div class="hero-body">
-    <p class="title fira">
+    <p class="title has-text-white">
       I design and implement scalable, data-driven web applications
     </p>
     <p class="subtitle is-4 has-text-grey">
@@ -51,118 +52,152 @@
   </div>
 </section>
 
-<section class="mt-5 columns">
-  <article class="mt-5 column is-two-thirds">
-    <p class="is-size-4">Toolbox</p>
-    <div class="mt-5 tags are-medium">
-      <span class="tag is-dark">Ruby on Rails</span>
-      <span class="tag is-dark">SQL & ActiveRecord</span>
-      <span class="tag is-dark">Sidekiq</span>
-      <span class="tag is-dark">Redis</span>
-      <span class="tag is-dark">RSpec & Capybara</span>
-      <span class="tag is-dark">MongoDB & Mongoose</span>
-      <span class="tag is-dark">Node.js & Express</span>
-      <span class="tag is-dark">React & Redux</span>
-      <span class="tag is-dark">Hotwire</span>
-      <span class="tag is-dark">Sass</span>
-      <span class="tag is-dark">TailwindCSS</span>
-      <span class="tag is-dark">Bulma</span>
-      <span class="tag is-dark">Bootstrap</span>
-    </div>
-  </article>
-</section>
-
 <section class="mt-5">
   <p class="is-size-4">Featured Projects</p>
   <article class="card mt-5">
-    <div class="card-image is-flex-mobile is-justify-content-center is-hidden-tablet">
-      <figure class="m-5 image is-256x256">
-        <img src="/images/music.svg" alt="Music" />
-      </figure>
-    </div>
-    <div class="card-content">
-      <div class="media is-align-items-center">
-        <div class="media-left is-hidden-mobile">
-          <figure class="image">
-            <img src="/images/music.svg" alt="Music" />
-          </figure>
-        </div>
-        <div class="media-content p-3">
-          <p class="title fira is-2">OST</p>
-          <p>
-            A user-driven database of original soundtracks (OSTs) from popular Asian dramas. 
-            Built with Rails, Bulma, and the Spotify API (via RSpotify). Features:
-          </p>
-            <div class="content">
-              <ul>
-                <li>Add and view Spotify playlists</li>
-                <li>Like and follow playlists</li>
-                <li>Listen on Spotify or YouTube</li>
-              </ul>
-            </div>
-            <div class="is-flex is-justify-content-space-between is-align-items-center mt-5">
-              <p class="is-italic is-size-7">Please be patient as the Heroku dyno spins up--thank you!</p>
-              <a href="https://ancient-forest-35389.herokuapp.com/" class="button is-light has-text-weight-bold">Check It Out</a>
-            </div>
-        </div>
+  <div class="card-image is-flex-mobile is-justify-content-center is-hidden-tablet">
+    <figure class="m-5 image is-256x256">
+      <img src="/images/music.svg" alt="Music" />
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media is-align-items-center">
+      <div class="media-left is-hidden-mobile">
+	<figure class="image">
+	  <img src="/images/music.svg" alt="Music" />
+	</figure>
+      </div>
+      <div class="media-content p-3">
+	<p class="title has-text-weight-light has-text-white is-2">OST</p>
+	<p>
+	  A user-driven database of original soundtracks (OSTs) from popular Asian dramas. Includes social
+		    features, e.g. likes/comments, and Spotify integration (via the API). Built with Rails, Turbo, and Bulma.
+	</p>
+	  <div class="is-flex is-justify-content-space-between is-align-items-center mt-5">
+	    <p class="is-italic is-size-7">Please be patient as the Heroku dyno spins up--thank you!</p>
+	    <a href="https://ancient-forest-35389.herokuapp.com/" class="button is-link has-text-weight-semibold">Check It Out</a>
+	  </div>
       </div>
     </div>
-  </article>
+  </div>
+</article>
+
+  
   <article class="card mt-5">
-    <div class="card-image is-flex-mobile is-justify-content-center is-hidden-tablet">
-      <figure class="m-5 image is-256x256">
-        <img src="/images/forest.svg" alt="Forest" />
-      </figure>
-    </div>
-    <div class="card-content">
-      <div class="media is-align-items-center">
-        <div class="media-left is-hidden-mobile">
-          <figure class="image">
-            <img src="/images/forest.svg" alt="Forest" />
-          </figure>
-        </div>
-        <div class="media-content p-3">
-          <p class="title fira is-2">AQI</p>
-          <p>
-            An Air Quality Index (AQI) monitoring tool, powered by data from the World Air Quality Index project.
-            Extends existing resources with additional data visualization. Built with Rails, PostgreSQL, Chartkick, 
-            and Tailwind.
-          </p>
-          <div class="is-flex is-justify-content-space-between is-align-items-center mt-5">
-            <p class="is-italic is-size-7">Please be patient as the Heroku dyno spins up--thank you!</p>
-            <a href="https://fathomless-retreat-37870.herokuapp.com/" class="button is-light has-text-weight-bold">Check It Out</a>
-          </div>
+  <div class="card-image is-flex-mobile is-justify-content-center is-hidden-tablet">
+    <figure class="m-5 image is-256x256">
+      <img src="/images/forest.svg" alt="Forest" />
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media is-align-items-center">
+      <div class="media-left is-hidden-mobile">
+	<figure class="image">
+	  <img src="/images/forest.svg" alt="Forest" />
+	</figure>
+      </div>
+      <div class="media-content p-3">
+	<p class="title has-text-weight-light has-text-white is-2">AQI</p>
+	<p>
+	  An Air Quality Index (AQI) monitoring tool, powered by data from the World Air Quality Index project.
+		    Extends existing resources with additional data visualization. Built with Rails, PostgreSQL, Chartkick, 
+		    and Tailwind.
+	</p>
+	  <div class="is-flex is-justify-content-space-between is-align-items-center mt-5">
+	    <p class="is-italic is-size-7">Please be patient as the Heroku dyno spins up--thank you!</p>
+	    <a href="https://fathomless-retreat-37870.herokuapp.com/" class="button is-link has-text-weight-semibold">Check It Out</a>
+	  </div>
       </div>
     </div>
-  </article>
+  </div>
+</article>
+
   <article class="card mt-5">
-    <div class="card-image is-flex-mobile is-justify-content-center is-hidden-tablet">
-      <figure class="m-5 image is-256x256">
-        <img src="/images/dictionary.svg" alt="Dictionary" />
-      </figure>
-    </div>
-    <div class="card-content">
-      <div class="media is-align-items-center">
-        <div class="media-left is-hidden-mobile">
-          <figure class="image">
-            <img src="/images/dictionary.svg" alt="Dictionary" />
-          </figure>
-        </div>
-        <div class="media-content p-3">
-          <p class="title fira is-2">CD</p>
-          <p>
-            A simple Chinese-English dictionary based on CC-CEDICT. Built with Rails, PostgreSQL, 
-            Textacular, Sidekiq, Bulma, and Regex magic. Upgrades planned to finetune search accuracy.
-          </p>
-          <div class="is-flex is-justify-content-space-between is-align-items-center mt-5">
-            <p class="is-italic is-size-7">Please be patient as the Heroku dyno spins up--thank you!</p>
-            <a href="https://morning-oasis-87823.herokuapp.com/" class="button is-light has-text-weight-bold">Check It Out</a>
-          </div>
-        </div>
+  <div class="card-image is-flex-mobile is-justify-content-center is-hidden-tablet">
+    <figure class="m-5 image is-256x256">
+      <img src="/images/dictionary.svg" alt="Dictionary" />
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media is-align-items-center">
+      <div class="media-left is-hidden-mobile">
+	<figure class="image">
+	  <img src="/images/dictionary.svg" alt="Dictionary" />
+	</figure>
+      </div>
+      <div class="media-content p-3">
+	<p class="title has-text-weight-light has-text-white is-2">CD</p>
+	<p>
+	  A simple Chinese-English dictionary based on CC-CEDICT. Built with Rails, PostgreSQL, 
+		    Textacular, Sidekiq, Bulma, and Regex magic.
+	</p>
+	  <div class="is-flex is-justify-content-space-between is-align-items-center mt-5">
+	    <p class="is-italic is-size-7">Please be patient as the Heroku dyno spins up--thank you!</p>
+	    <a href="https://morning-oasis-87823.herokuapp.com/" class="button is-link has-text-weight-semibold">Check It Out</a>
+	  </div>
       </div>
     </div>
-  </article>
+  </div>
+</article>
+
 <section>
+
+<section class="mt-6">
+    <p class="is-size-4">Toolbox</p>
+    <article class="mt-5">
+      <div class="mb-5">
+  <p class="has-text-weight-semibold mb-2">Back End</p>
+  <div class="tags are-medium">
+      <span class="tag is-dark"> Ruby on Rails </span>
+      <span class="tag is-dark"> Node.js </span>
+  </div>
+</div>
+
+
+      <div class="mb-5">
+  <p class="has-text-weight-semibold mb-2">Front End</p>
+  <div class="tags are-medium">
+      <span class="tag is-dark"> React & Redux </span>
+      <span class="tag is-dark"> TailwindCSS </span>
+      <span class="tag is-dark"> Bulma </span>
+      <span class="tag is-dark"> Bootstrap </span>
+      <span class="tag is-dark"> Sass </span>
+  </div>
+</div>
+
+
+      <div class="mb-5">
+  <p class="has-text-weight-semibold mb-2">Databases</p>
+  <div class="tags are-medium">
+      <span class="tag is-dark"> PostgreSQL & ActiveRecord </span>
+      <span class="tag is-dark"> Redis </span>
+      <span class="tag is-dark"> MongoDB & Mongoose </span>
+  </div>
+</div>
+    
+
+      <div class="mb-5">
+  <p class="has-text-weight-semibold mb-2">Testing</p>
+  <div class="tags are-medium">
+      <span class="tag is-dark"> RSpec </span>
+      <span class="tag is-dark"> minitest </span>
+      <span class="tag is-dark"> Capybara </span>
+  </div>
+</div>
+
+
+      <div class="mb-5">
+  <p class="has-text-weight-semibold mb-2">Other</p>
+  <div class="tags are-medium">
+      <span class="tag is-dark"> Linux </span>
+      <span class="tag is-dark"> Git </span>
+      <span class="tag is-dark"> Heroku </span>
+      <span class="tag is-dark"> DigitalOcean </span>
+  </div>
+</div>
+
+    </article>
+</section>
 
       <footer class="footer mt-6">
   <div class="content has-text-centered">
